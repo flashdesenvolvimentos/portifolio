@@ -1,0 +1,56 @@
+@media (min-width: 1024px) {
+    div#contato-div{
+        display: inline-flex;
+        margin-top: 60px;
+    }
+    div#contato-div>div{
+        margin-inline: 90px;
+    }
+    div#contato-form{
+        padding-inline: 20px;
+        padding-block: 70px;
+    }
+    div#contato-img img{
+        height: 290px;
+    }
+}
+
+@media (max-width: 1023px){
+    div#contato-div>div#contato-form{
+        margin-top: 60px;
+    }
+    div#contato-div>div#contato-form form{
+        padding-block: 30px !important;
+        padding-inline: 8px !important;
+    }
+    div#contato-img img{
+        height: 200px;
+        width: 380px;
+        margin-left: 0px;
+    }
+}
+div#contato-form{
+    font-family: serif;
+    border: 7px rgb(62, 63, 68) dotted;
+    border-radius: 20px;
+}
+div#contato-form input{
+    border-radius: 10px;
+    border-style: double;
+    margin-block: 10px;
+    padding-inline: 12px;
+}
+div#contato-form input::placeholder{
+    text-align: center;
+    color: gray;
+}
+
+div#contato-form button[type="submit"]{
+    border-radius: 30px;
+    padding-inline: 19px;
+    border-style: double;
+}
+
+div#contato-form button[type="submit"]:focus{
+    background-color: darkslategrey;
+}

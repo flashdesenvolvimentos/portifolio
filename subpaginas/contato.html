@@ -42,12 +42,12 @@
     </aside>
     <main>
         <style>
-            div#contatodiv{
+            div#contato-div{
                 display: inline-flex;
                 margin-top: 60px;
             }
             div#contato-formulario{
-                margin-inline-start: 100px;
+                margin-inline-start: 10px;
             }
         </style>
         <div class="container-fluid" style="
@@ -60,17 +60,51 @@
             </p>
             <div id="contato-div">
                 <div id="contato-img">
-                    <img src="../assets/Imagem_Contato.jpg" alt="Texto não carregado-verifique o seu navegador"> 
+                    <img src="../assets/Banner_Empresa_Contato.png" alt="Texto não carregado-verifique o seu navegador"> 
                 </div>
-                <div id="contato-form">
-                    <form>
-                        <nav>
-                            <h3>Contato</h3>
-                            <abbr title="Nome"><input type="text" name="nome" id="nome" placeholder="Digite o seu nome"><br></abbr>
-                            <abbr title="Email"><input type="email" name="email" id="email" placeholder="Digite o seu email"><br></abbr>
-                            <abbr title="Enviar"><button type="submit" id="enviar">Enviar</button></abbr>
-                        </nav>
-                    </form>
+                <div id="outros-contatos">
+                    <style>
+                        /* Botão-Whatsapp */
+                        button#button-whatsapp{
+                            background-color: white;
+                            border-radius: 8px;
+                            border-color: green;
+                        }
+                        a>button#button-whatsapp{
+                            width: 280px;
+                            color: forestgreen;
+                            padding-inline: 20px;
+                        }
+                        a>button#button-whatsapp:hover{
+                            transition: all 2ms ease-out;
+                            background-color: green;
+                            color: honeydew;
+                        }
+                        /* Botão-Facebook*/
+                        a>button#button-facebook{
+                            margin-top: 20px;
+                            background-color: white;
+                            border-radius: 8px;
+                            border-color: blue;
+                            color: darkblue;
+                            padding-inline: 20px;
+                            width: 280px;
+                        }
+                        a>button#button-facebook:hover{
+                            background:darkblue;
+                            color: white;
+
+                        }
+
+                    </style>
+
+                    <nav>
+                        <a href="http://api.whatsapp.com/send?phone=5571985119712"><button id="button-whatsapp">Link do Whatsapp</button></a>
+                        <a href="https://www.facebook.com/profile.php?id=100073526258303"><button id="button-facebook">Link do Facebook</button></a>
+                        <span>---------- ou ------------</span>
+                        <h3>Escaneie o QR Code</h3>
+                        <img src="../assets/qrcode-instagram.png" alt="www.instagram.com/flashdesenvolvimentos" height="140px">
+                    </nav>
                 </div>
             </div>
         </div>

@@ -15,7 +15,7 @@
     }
 }
 
-@media (max-width: 1023px){
+@media (max-width: 1023px){ 
     div#contato-div>div#contato-form{
         margin-top: 60px;
     }
@@ -54,3 +54,35 @@ div#contato-form button[type="submit"]{
 div#contato-form button[type="submit"]:focus{
     background-color: darkslategrey;
 }
+
+     /* Botão-Whatsapp */
+     button#button-whatsapp{
+        background-color: white;
+        border-radius: 8px;
+        border-color: green;
+    }
+    a>button#button-whatsapp{
+        width: 280px;
+        color: forestgreen;
+        padding-inline: 20px;
+    }
+    a>button#button-whatsapp:hover{
+        transition: all 2ms ease-out;
+        background-color: green;
+        color: honeydew;
+    }
+    /* Botão-Facebook*/
+    a>button#button-facebook{
+        margin-top: 20px;
+        background-color: white;
+        border-radius: 8px;
+        border-color: blue;
+        color: darkblue;
+        padding-inline: 20px;
+        width: 280px;
+    }
+    a>button#button-facebook:hover{
+        background:darkblue;
+        color: white;
+
+    }
